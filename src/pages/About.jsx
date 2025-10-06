@@ -2,7 +2,7 @@ import AnimatedCounter from '../components/AnimatedCounter.jsx'
 
 export default function About() {
   return (
-    <section className="container-padded py-16">
+    <section className="container-padded py-32 ">
       <h1 className="section-title">About Us</h1>
       <p className="section-subtitle max-w-2xl">We are a team of CDA-authorized architects and engineers serving Islamabad & Rawalpindi. Our mission is to deliver quality construction and reliable real estate solutions.</p>
       <div className="mt-8 grid gap-6 md:grid-cols-2">

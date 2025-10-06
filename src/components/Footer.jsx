@@ -1,9 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white mt-16">
+    <footer className="bg-primary text-white mt-16 pt-16">
       <div className="container-padded py-10 grid gap-6 md:grid-cols-3">
         <div>
-          <h3 className="text-lg font-bold">ZmungClient Real Estate & Construction</h3>
+        <div className="flex items-center gap-3">
+        <div className="h-9 w-9 rounded-lg bg-warmGray text-white grid place-items-center font-bold">ZC</div>
+          <h3 className="text-lg font-bold">Real Estate & Construction</h3>
+        </div>
+        
           <p className="text-sm text-white/80 mt-2">Building trust, designing dreams, delivering quality.</p>
         </div>
         <div>

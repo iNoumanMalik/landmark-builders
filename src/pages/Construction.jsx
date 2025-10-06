@@ -9,7 +9,7 @@ export default function Construction() {
   ]
 
   return (
-    <section className="container-padded py-16">
+    <section className="container-padded py-32">
       <h1 className="section-title">Construction Services</h1>
       <p className="section-subtitle max-w-2xl">Our construction department handles end-to-end building solutions, guided by CDA-authorized engineers and architects.</p>
 

@@ -20,13 +20,13 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled ? 'bg-white shadow' : 'bg-transparent'} `}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled ? 'bg-white shadow' : 'bg-transparent'} mb-6`}>
       <nav className="container-padded flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
           <div className="h-9 w-9 rounded-lg bg-primary text-white grid place-items-center font-bold">ZC</div>
           <div className="leading-tight">
             <div className="font-bold text-primary">ZmungClient</div>
-            <div className="text-xs text-white">Real Estate & Construction</div>
+            <div className="text-xs text-gray-400">Real Estate & Construction</div>
           </div>
         </Link>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  `text-sm font-semibold hover:text-primary transition ${isActive ? 'text-accent' : 'text-primary'}`
+                  `text-sm font-semibold transition pb-1 border-b-2 ${isActive ? 'text-primary border-accent' : 'border-transparent text-gray-400'} hover:text-primary`
                 }
               >
                 {item.label}
@@ -60,7 +60,7 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   to={item.to}
                   className={({ isActive }) =>
-                    `block py-2 text-sm font-semibold ${isActive ? 'text-primary' : 'text-warmGray'}`
+                    `block py-2 text-sm font-semibold transition border-b-2 ${isActive ? 'text-primary border-accent' : 'text-warmGray border-transparent'}`
                   }
                 >
                   {item.label}

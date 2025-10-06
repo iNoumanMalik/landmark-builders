@@ -1,7 +1,7 @@
 export default function RealEstate() {
   const properties = Array.from({ length: 8 }, (_, i) => ({ id: i + 1, title: `Property ${i + 1}`, category: ['House', 'Apartment', 'Plot'][i % 3] }))
   return (
-    <section className="container-padded py-16">
+    <section className="container-padded py-32">
       <h1 className="section-title">Real Estate Services</h1>
       <p className="section-subtitle max-w-2xl">Explore houses for rent (furnished & unfurnished), apartments, plots for sale, and commercial & residential properties.</p>
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

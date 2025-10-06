@@ -2,7 +2,7 @@ import ContactForm from '../components/ContactForm.jsx'
 
 export default function Contact() {
   return (
-    <section className="container-padded py-16" id="contact">
+    <section className="container-padded py-32" id="contact">
       <h1 className="section-title">Contact Us</h1>
       <p className="section-subtitle">Get in touch for quotes, consultations, or property inquiries.</p>
       <div className="mt-8 grid gap-8 md:grid-cols-2">
