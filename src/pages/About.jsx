@@ -15,11 +15,11 @@ export default function About() {
           <div className="mt-3 grid grid-cols-2 gap-4">
             <div className="text-center">
               <div className="text-sm text-warmGray">Years of Experience</div>
-              <div className="text-2xl font-bold text-primary"><AnimatedCounter to={12} suffix="+" /></div>
+              <div className="text-2xl font-bold text-primary"><AnimatedCounter to={5} suffix="+" /></div>
             </div>
             <div className="text-center">
               <div className="text-sm text-warmGray">Projects Completed</div>
-              <div className="text-2xl font-bold text-primary"><AnimatedCounter to={150} suffix="+" /></div>
+              <div className="text-2xl font-bold text-primary"><AnimatedCounter to={60} suffix="+" /></div>
             </div>
           </div>
         </div>
