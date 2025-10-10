@@ -2,6 +2,8 @@ import HeroSection from '../components/HeroSection.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 import AnimatedCounter from '../components/AnimatedCounter.jsx'
 import ProjectGallery from '../components/ProjectGallery.jsx'
+import constructionImg from '../assets/construction.jpg'
+import realEstateImg from '../assets/realstate.jpg'
 
 export default function Home() {
   return (
@@ -16,11 +18,13 @@ export default function Home() {
           <ServiceCard
             title="Construction"
             description="Complete construction services from design to build. Residential and commercial projects."
+            image={constructionImg}
             href="/construction"
           />
           <ServiceCard
             title="Real Estate"
             description="Houses, apartments, plots, and commercial properties in Islamabad & Rawalpindi."
+            image={realEstateImg}
             href="/realestate"
           />
         </div>
@@ -33,7 +37,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { title: 'CDA Authorized Engineers', icon: '👷' },
-              { title: 'Quality Guaranteed', icon: '✅' },
+              { title: 'Quality Guaranteed', icon: '🛡️' },
               { title: 'Experience You Can Trust', icon: '🏗️' },
               { title: 'Professional Architects', icon: '📐' },
             ].map((f, i) => (
