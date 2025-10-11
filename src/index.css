@@ -43,3 +43,42 @@ a {
 .card {
   @apply bg-white rounded-xl shadow-card border border-gray-100;
 }
+
+/* 3D Flip Card Utilities */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Leaflet Map Styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+
+.leaflet-popup-close-button {
+  color: #6b7280;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #374151;
+}
+
+.custom-pin {
+  background: transparent !important;
+  border: none !important;
+}
