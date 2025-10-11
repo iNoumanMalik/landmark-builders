@@ -237,17 +237,6 @@ export default function Construction() {
         </div>
       </div> */}
 
-      {/* <div className="mt-16 text-center">
-        <h3 className="text-xl font-bold text-primary">Ready to build?</h3>
-        <p className="text-warmGray mt-2">
-          Start your project with our expert team today.
-        </p>
-        <div className="mt-4">
-          <a href="/contact" className="btn-accent">
-            Start Your Project Today
-          </a>
-        </div>
-      </div> */}
     </section>
   );
 }

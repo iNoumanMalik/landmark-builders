@@ -108,7 +108,7 @@ export default function RealEstate() {
         transition={{ duration: 0.8, delay: 0.4 }}
         className="mt-20 text-center"
       >
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto border border-gray-200">
+        <div className="bg-white rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto border border-gray-200">
           <div className="w-full flex justify-center">
             <h2 className="max-w-xl  text-2xl sm:text-3xl font-bold text-primary mb-4 border-b-4 border-accent">
               Why Choose Our Real Estate Services?
@@ -196,20 +196,58 @@ export default function RealEstate() {
           </div>
         </div>
       </motion.div>
-          <div className="mt-16 text-center">
-            <h3 className="text-xl font-bold text-primary">
-              Looking for Property?
-            </h3>
-            <p className="text-warmGray mt-2">
-              Find the perfect home, apartment, or plot with our trusted
-              listings.
-            </p>
-            <div className="mt-4">
-              <a href="/contact" className="btn-accent">
-                Get Property Details
-              </a>
-            </div>
-          </div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="text-center mt-16"
+      >
+        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10">
+          <h3 className="text-2xl font-bold text-primary mb-4">
+            Looking for Property?
+          </h3>
+          <p className="text-warmGray mb-6 max-w-2xl mx-auto">
+            Find the perfect home, apartment, or plot with our trusted listings.
+            From luxury apartments to profitable plots, we make property
+            investment easy.
+          </p>
+          <motion.a
+            href="/contact"
+            className="btn-accent inline-flex items-center space-x-2"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span>Get Property Details</span>
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
+            </svg>
+          </motion.a>
+        </div>
+      </motion.div>
+      {/* <div className="mt-16 text-center">
+        <h3 className="text-xl font-bold text-primary">
+          Looking for Property?
+        </h3>
+        <p className="text-warmGray mt-2">
+          Find the perfect home, apartment, or plot with our trusted listings.
+        </p>
+        <div className="mt-4">
+          <a href="/contact" className="btn-accent">
+            Get Property Details
+          </a>
+        </div>
+      </div> */}
     </section>
   );
 }
