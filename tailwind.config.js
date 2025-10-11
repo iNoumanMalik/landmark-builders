@@ -17,6 +17,9 @@ export default {
       fontFamily: {
         sans: ["Inter", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"],
       },
+      perspective: {
+        '1000': '1000px',
+      },
     },
   },
   plugins: [],

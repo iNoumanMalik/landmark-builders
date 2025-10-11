@@ -43,3 +43,12 @@ a {
 .card {
   @apply bg-white rounded-xl shadow-card border border-gray-100;
 }
+
+/* 3D Flip Card Utilities */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
