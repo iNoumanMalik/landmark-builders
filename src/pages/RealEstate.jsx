@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MapContainer from "../components/map/MapContainer";
 
 export default function RealEstate() {
   const services = [
@@ -37,7 +38,7 @@ export default function RealEstate() {
         transition={{ duration: 0.8 }}
         className="mb-16"
       >
-        <h1 className="section-title">Real Estate Services</h1>
+      <h1 className="section-title">Real Estate Services</h1>
         <p className="section-subtitle max-w-2xl">
           Explore houses for rent (furnished & unfurnished), apartments, plots
           for sale, and commercial & residential properties.
@@ -196,6 +197,18 @@ export default function RealEstate() {
           </div>
         </div>
       </motion.div>
+
+      {/* Interactive Map Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="mt-20"
+      >
+        <MapContainer />
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
