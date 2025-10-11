@@ -31,7 +31,7 @@ const services = [
 export default function Construction() {
 
   return (
-    <section className="container-padded py-32">
+    <section className="container-padded pt-36">
       <div>
         <h1 className="section-title inline-block">
           Our Construction Services
