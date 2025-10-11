@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import image from '../assets/realstate.jpg'
 
 export default function RealEstate() {
   const services = [
