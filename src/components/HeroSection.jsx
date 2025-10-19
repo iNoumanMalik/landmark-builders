@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { motion } from 'framer-motion'
+import { openWhatsApp } from '../utils/openWhatsapp'
 
 function FloatingBox() {
   return (
@@ -46,8 +47,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <a href="#contact" className="btn-accent">Get a Quote</a>
-          <a href="#contact" className="btn-primary">Contact Us</a>
+          <button onClick={()=>openWhatsApp("quote", "")} className="btn-accent">Get a Quote</button>
+          <button onClick={()=>openWhatsApp("contact", "")} className="btn-primary">Contact Us</button>
         </motion.div>
       </div>
     </section>

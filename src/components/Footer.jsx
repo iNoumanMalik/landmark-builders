@@ -13,7 +13,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold">Contact</h4>
           <p className="text-sm text-white/80 mt-2">Islamabad / Rawalpindi</p>
-          <p className="text-sm text-white/80">Phone: +92-300-0000000</p>
+          <p className="text-sm text-white/80">Phone: +92 334 5012077</p>
           <p className="text-sm text-white/80">Email: info@zmungclient.com</p>
         </div>
         <div>

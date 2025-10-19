@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import MapContainer from "../components/map/MapContainer";
+import { openWhatsApp } from "../utils/openWhatsapp";
 
 export default function RealEstate() {
   const services = [
@@ -91,6 +92,7 @@ export default function RealEstate() {
                     className="btn-accent"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={()=>openWhatsApp("know-more", "real-estate")}
                   >
                     Know More
                   </motion.button>
