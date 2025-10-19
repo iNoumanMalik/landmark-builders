@@ -10,7 +10,7 @@ export const openWhatsApp = (type, pageName) => {
       message = `Hello! I want to get in touch with you.`;
       break;
     case "consultation":
-      message = `Hi! I’d like to request a consultation about your ${pageName}  services.`;
+      message = `Hi! I’d like to request a consultation about your ${pageName} services.`;
       break;
     case "know-more":
       message = `Hello! I’d like to know more about your ${pageName} services.`;
