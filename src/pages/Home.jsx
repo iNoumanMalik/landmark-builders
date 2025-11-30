@@ -1,23 +1,23 @@
-import HeroSection from '../components/HeroSection.jsx'
-import ServiceCard from '../components/ServiceCard.jsx'
-import AnimatedCounter from '../components/AnimatedCounter.jsx'
-import ProjectGallery from '../components/ProjectGallery.jsx'
-import constructionImg from '../assets/construction.jpg'
-import realEstateImg from '../assets/realstate.jpg'
+import HeroSection from "../components/HeroSection.jsx";
+import ServiceCard from "../components/ServiceCard.jsx";
+import AnimatedCounter from "../components/AnimatedCounter.jsx";
+import ProjectGallery from "../components/ProjectGallery.jsx";
+import constructionImg from "../assets/construction.jpg";
+import realEstateImg from "../assets/realstate.jpg";
 
 import { ChevronDown } from "lucide-react";
-import {useState} from "react";
+import { useState } from "react";
 
 const clientFAQs = [
   {
     id: 1,
-    question: "Where is ZmungClient's main office located?",
+    question: "Where is ZamungClient's main office located?",
     answer:
       "Our main office is situated in Gulberg Greens, Islamabad. You can find the full address on our Contact Us page.",
   },
   {
     id: 2,
-    question: "How long has ZmungClient been operating in the market?",
+    question: "How long has ZamungClient been operating in the market?",
     answer:
       "We have over 10 years of combined experience in the Real Estate and Construction industry, building trust and delivering excellence across Islamabad and Rawalpindi.",
   },
@@ -89,7 +89,6 @@ const clientFAQs = [
 ];
 
 export default function Home() {
-
   const [openId, setOpenId] = useState(null);
 
   const toggleAccordion = (id) => {
@@ -103,7 +102,9 @@ export default function Home() {
       {/* Services Overview */}
       <section className="container-padded py-16">
         <h2 className="section-title">Our Services</h2>
-        <p className="section-subtitle">Explore our core offerings in construction and real estate.</p>
+        <p className="section-subtitle">
+          Explore our core offerings in construction and real estate.
+        </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           <ServiceCard
             title="Construction"
@@ -126,10 +127,10 @@ export default function Home() {
           <h2 className="section-title">Why Choose Us</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: 'CDA Authorized Engineers', icon: '👷' },
-              { title: 'Quality Guaranteed', icon: '🛡️' },
-              { title: 'Experience You Can Trust', icon: '🏗️' },
-              { title: 'Professional Architects', icon: '📐' },
+              { title: "CDA Authorized Engineers", icon: "👷" },
+              { title: "Quality Guaranteed", icon: "🛡️" },
+              { title: "Experience You Can Trust", icon: "🏗️" },
+              { title: "Professional Architects", icon: "📐" },
             ].map((f, i) => (
               <div key={i} className="card p-6 text-center">
                 <div className="text-3xl">{f.icon}</div>
@@ -140,11 +141,15 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="card p-6">
               <div className="text-sm text-warmGray">Years of Experience</div>
-              <div className="text-2xl font-bold text-primary"><AnimatedCounter to={12} suffix="+" /></div>
+              <div className="text-2xl font-bold text-primary">
+                <AnimatedCounter to={12} suffix="+" />
+              </div>
             </div>
             <div className="card p-6">
               <div className="text-sm text-warmGray">Projects Completed</div>
-              <div className="text-2xl font-bold text-primary"><AnimatedCounter to={150} suffix="+" /></div>
+              <div className="text-2xl font-bold text-primary">
+                <AnimatedCounter to={150} suffix="+" />
+              </div>
             </div>
           </div>
         </div>
@@ -153,10 +158,16 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="bg-primary">
         <div className="container-padded py-12 text-center">
-          <h3 className="text-white text-2xl font-bold">Ready to start your project?</h3>
-          <p className="text-white/80 mt-2">We deliver premium construction and real estate solutions.</p>
+          <h3 className="text-white text-2xl font-bold">
+            Ready to start your project?
+          </h3>
+          <p className="text-white/80 mt-2">
+            We deliver premium construction and real estate solutions.
+          </p>
           <div className="mt-6">
-            <a href="/contact" className="btn-accent">Request Consultation</a>
+            <a href="/contact" className="btn-accent">
+              Request Consultation
+            </a>
           </div>
         </div>
       </section>
@@ -220,5 +231,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }

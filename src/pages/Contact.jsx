@@ -13,7 +13,7 @@ export default function Contact() {
           <h3 className="font-semibold text-primary">Office</h3>
           <p className="text-sm text-warmGray mt-2">Islamabad / Rawalpindi</p>
           <p className="text-sm text-warmGray">Phone: +92-300-0000000</p>
-          <p className="text-sm text-warmGray">Email: info@zmungclient.com</p>
+          <p className="text-sm text-warmGray">Email: info@Zamungclient.com</p>
           <div className="mt-4">
             <iframe
               title="Office Location"

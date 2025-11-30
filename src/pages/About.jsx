@@ -14,7 +14,7 @@ export default function About() {
         <div className="card p-6">
           <h3 className="font-semibold text-primary">Company Profile</h3>
           <p className="text-sm text-warmGray mt-2">
-            ZmungClient Real Estate & Construction has successfully delivered
+            ZamungClient Real Estate & Construction has successfully delivered
             residential and commercial projects across CDA and RDA
             jurisdictions.
           </p>
@@ -39,7 +39,7 @@ export default function About() {
       </div>
       <div className="mt-8">
         <div className="w-full h-32 mb-28 bg-gray-200 rounded-lg grid place-items-center text-gray-500">
-          <img src={panoAbout} className="w-full h-full rounded-2xl"/>
+          <img src={panoAbout} className="w-full h-full rounded-2xl" />
         </div>
       </div>
     </section>
