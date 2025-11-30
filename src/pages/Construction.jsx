@@ -2,7 +2,15 @@ import React from "react";
 import ProjectGallery from "../components/ProjectGallery.jsx";
 import ConstructionTabs from "../components/ConstructionTabs.jsx";
 import { motion } from "framer-motion";
-import { ChevronDown, Users, UserCheck, FileText, CheckCircle, Hammer, Home } from "lucide-react";
+import {
+  ChevronDown,
+  Users,
+  UserCheck,
+  FileText,
+  CheckCircle,
+  Hammer,
+  Home,
+} from "lucide-react";
 
 const services = [
   {
@@ -31,20 +39,22 @@ const journeySteps = [
   {
     step: 1,
     title: "First Meeting",
-    description: "Initial consultation to gather plot size, location, and client requirements",
+    description:
+      "Initial consultation to gather plot size, location, and client requirements",
     timeEstimate: "1–2 days",
     icon: Users,
     color: "bg-blue-100 text-blue-800",
-    tooltip: "Includes site visit and preliminary assessment"
+    tooltip: "Includes site visit and preliminary assessment",
   },
   {
     step: 2,
     title: "Architect Meeting",
-    description: "Client meets principal architect to discuss vision and design preferences",
+    description:
+      "Client meets principal architect to discuss vision and design preferences",
     timeEstimate: "2–3 days",
     icon: UserCheck,
     color: "bg-green-100 text-green-800",
-    tooltip: "Detailed design consultation and concept development"
+    tooltip: "Detailed design consultation and concept development",
   },
   {
     step: 3,
@@ -53,7 +63,7 @@ const journeySteps = [
     timeEstimate: "1 day",
     icon: FileText,
     color: "bg-yellow-100 text-yellow-800",
-    tooltip: "Includes terms, payment schedule, and project timeline"
+    tooltip: "Includes terms, payment schedule, and project timeline",
   },
   {
     step: 4,
@@ -62,7 +72,7 @@ const journeySteps = [
     timeEstimate: "7–10 days",
     icon: CheckCircle,
     color: "bg-purple-100 text-purple-800",
-    tooltip: "Includes CDA approval and final design modifications"
+    tooltip: "Includes CDA approval and final design modifications",
   },
   {
     step: 5,
@@ -71,7 +81,7 @@ const journeySteps = [
     timeEstimate: "Varies",
     icon: Hammer,
     color: "bg-orange-100 text-orange-800",
-    tooltip: "Depends on project size and complexity"
+    tooltip: "Depends on project size and complexity",
   },
   {
     step: 6,
@@ -80,13 +90,11 @@ const journeySteps = [
     timeEstimate: "Varies",
     icon: Home,
     color: "bg-emerald-100 text-emerald-800",
-    tooltip: "Complete interior design and final inspections"
-  }
+    tooltip: "Complete interior design and final inspections",
+  },
 ];
 
-
 export default function Construction() {
-
   return (
     <section className="container-padded pt-36">
       <div>
@@ -120,7 +128,7 @@ export default function Construction() {
         <ConstructionTabs />
       </div>
 
-      {/* Your Journey with ZmungClient Section */}
+      {/* Your Journey with ZamungClient Section */}
       <div className="mt-24 mb-16">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -129,7 +137,7 @@ export default function Construction() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title mb-4">Your Journey with ZmungClient</h2>
+          <h2 className="section-title mb-4">Your Journey with ZamungClient</h2>
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: 200 }}
@@ -144,7 +152,7 @@ export default function Construction() {
           <div className="relative">
             {/* Vertical Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary opacity-30"></div>
-            
+
             {/* Timeline Steps */}
             {journeySteps.map((step, index) => {
               const IconComponent = step.icon;
@@ -159,7 +167,9 @@ export default function Construction() {
                 >
                   {/* Step Number Circle */}
                   <div className="relative z-10 flex items-center justify-center w-16 h-16 bg-white border-4 border-primary rounded-full shadow-lg">
-                    <span className="text-xl font-bold text-primary">{step.step}</span>
+                    <span className="text-xl font-bold text-primary">
+                      {step.step}
+                    </span>
                   </div>
 
                   {/* Step Card */}
@@ -174,18 +184,22 @@ export default function Construction() {
                             <IconComponent className="w-6 h-6 text-primary" />
                           </div>
                           <div>
-                            <h3 className="text-xl font-bold text-primary">{step.title}</h3>
-                            <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${step.color}`}>
+                            <h3 className="text-xl font-bold text-primary">
+                              {step.title}
+                            </h3>
+                            <div
+                              className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${step.color}`}
+                            >
                               {step.timeEstimate}
                             </div>
                           </div>
                         </div>
                       </div>
-                      
+
                       <p className="text-warmGray leading-relaxed mb-4">
                         {step.description}
                       </p>
-                      
+
                       {/* Tooltip */}
                       <div className="text-xs text-accent font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         💡 {step.tooltip}
@@ -207,10 +221,13 @@ export default function Construction() {
           className="text-center mt-16"
         >
           <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10">
-            <h3 className="text-2xl font-bold text-primary mb-4">Ready to build?</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              Ready to build?
+            </h3>
             <p className="text-warmGray mb-6 max-w-2xl mx-auto">
-              Join hundreds of satisfied clients who have built their dream homes with ZmungClient. 
-              Our proven process ensures a smooth and transparent construction experience.
+              Join hundreds of satisfied clients who have built their dream
+              homes with ZamungClient. Our proven process ensures a smooth and
+              transparent construction experience.
             </p>
             <motion.a
               href="/contact"
@@ -219,8 +236,18 @@ export default function Construction() {
               whileTap={{ scale: 0.95 }}
             >
               <span>Start Your Project Today</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </motion.a>
           </div>
@@ -236,7 +263,6 @@ export default function Construction() {
           <ProjectGallery />
         </div>
       </div> */}
-
     </section>
   );
 }

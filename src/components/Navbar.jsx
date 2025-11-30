@@ -31,7 +31,7 @@ export default function Navbar() {
             ZC
           </div>
           <div className="leading-tight">
-            <div className="font-bold text-primary">ZmungClient</div>
+            <div className="font-bold text-primary">ZamungClient</div>
             <div className="text-xs text-gray-400">
               Real Estate & Construction
             </div>
@@ -64,10 +64,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <Link
-              to="/contact"
-              className="btn-accent"
-            >
+            <Link to="/contact" className="btn-accent">
               Request Consultation
             </Link>
           </li>
@@ -95,10 +92,7 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <Link
-                to="/contact"
-                className="btn-accent w-full justify-center"
-              >
+              <Link to="/contact" className="btn-accent w-full justify-center">
                 Request Consultation
               </Link>
             </li>

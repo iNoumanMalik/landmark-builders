@@ -1,7 +1,7 @@
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import { motion } from 'framer-motion'
-import { openWhatsApp } from '../utils/openWhatsapp'
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { motion } from "framer-motion";
+import { openWhatsApp } from "../utils/openWhatsapp";
 
 function FloatingBox() {
   return (
@@ -9,7 +9,7 @@ function FloatingBox() {
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color="#C59B42" />
     </mesh>
-  )
+  );
 }
 
 export default function HeroSection() {
@@ -20,7 +20,12 @@ export default function HeroSection() {
           <ambientLight intensity={0.6} />
           <directionalLight position={[5, 5, 5]} />
           <FloatingBox />
-          <OrbitControls enablePan={false} enableZoom={false} autoRotate autoRotateSpeed={1.5} />
+          <OrbitControls
+            enablePan={false}
+            enableZoom={false}
+            autoRotate
+            autoRotateSpeed={1.5}
+          />
         </Canvas>
       </div>
 
@@ -31,7 +36,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="text-white text-4xl md:text-5xl font-bold"
         >
-          ZmungClient Real Estate & Construction
+          ZamungClient Real Estate & Construction
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -47,10 +52,20 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button onClick={()=>openWhatsApp("quote", "")} className="btn-accent">Get a Quote</button>
-          <button onClick={()=>openWhatsApp("contact", "")} className="btn-primary">Contact Us</button>
+          <button
+            onClick={() => openWhatsApp("quote", "")}
+            className="btn-accent"
+          >
+            Get a Quote
+          </button>
+          <button
+            onClick={() => openWhatsApp("contact", "")}
+            className="btn-primary"
+          >
+            Contact Us
+          </button>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
