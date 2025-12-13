@@ -1,32 +1,22 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { openWhatsApp } from "../utils/openWhatsapp";
-
-function FloatingBox() {
-  return (
-    <mesh rotation={[0.4, 0.2, 0]}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="#C59B42" />
-    </mesh>
-  );
-}
+import heroBG from "../assets/hero-4.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[70vh] md:min-h-screen grid place-items-center bg-hero-gradient overflow-hidden">
-      <div className="absolute inset-0">
-        <Canvas camera={{ position: [0, 0, 3] }}>
-          <ambientLight intensity={0.6} />
-          <directionalLight position={[5, 5, 5]} />
-          <FloatingBox />
-          <OrbitControls
-            enablePan={false}
-            enableZoom={false}
-            autoRotate
-            autoRotateSpeed={1.5}
-          />
-        </Canvas>
+    <section className="relative min-h-[70vh] md:min-h-screen grid place-items-center overflow-hidden">
+      
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${heroBG})`, 
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       <div className="relative container-padded py-24 md:py-32 text-center">

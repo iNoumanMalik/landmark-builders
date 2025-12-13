@@ -18,7 +18,7 @@ export default function Footer() {
           <h4 className="font-semibold">Contact</h4>
           <p className="text-sm text-white/80 mt-2">Islamabad / Rawalpindi</p>
           <p className="text-sm text-white/80">Phone: +92 334 5012077</p>
-          <p className="text-sm text-white/80">Email: info@Zamungclient.com</p>
+          <p className="text-sm text-white/80">Email: info@zamungclient.com</p>
         </div>
         <div>
           <h4 className="font-semibold">Follow</h4>
