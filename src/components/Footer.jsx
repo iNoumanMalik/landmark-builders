@@ -1,12 +1,14 @@
+import logo from "../../public/logo.png";
 export default function Footer() {
   return (
     <footer className="bg-primary text-white mt-16 pt-16">
       <div className="container-padded py-10 grid gap-6 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-lg bg-warmGray text-white grid place-items-center font-bold">
+            {/* <div className="h-9 w-9 rounded-lg bg-warmGray text-white grid place-items-center font-bold">
               ZC
-            </div>
+            </div> */}
+            <img src={logo} className="w-10"/>
             <h3 className="text-lg font-bold">Real Estate & Construction</h3>
           </div>
 

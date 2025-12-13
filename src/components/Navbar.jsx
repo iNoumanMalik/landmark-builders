@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../public/logo.png";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -27,9 +28,10 @@ export default function Navbar() {
     >
       <nav className="container-padded flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="h-9 w-9 rounded-lg bg-primary text-white grid place-items-center font-bold">
+          {/* <div className="h-9 w-9 rounded-lg bg-primary text-white grid place-items-center font-bold">
             ZC
-          </div>
+          </div> */}
+          <img src={logo} className="w-10"/>
           <div className="leading-tight">
             <div className="font-bold text-primary">ZamungClient</div>
             <div className="text-xs text-gray-400">

@@ -173,10 +173,10 @@ export default function Home() {
       </section>
 
       {/* Project Gallery */}
-      <section className="container-padded py-16">
+      {/* <section className="container-padded py-16">
         <h2 className="section-title">Completed Projects</h2>
         <ProjectGallery />
-      </section>
+      </section> */}
 
       <div className="mt-12 max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-primaryBlue text-center section-title">
