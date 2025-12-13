@@ -1,21 +1,19 @@
 import { motion } from "framer-motion";
-import { openWhatsApp } from "../utils/openWhatsapp";
+import { openWhatsApp } from "../utils/openWhatsApp";
 import heroBG from "../assets/hero-4.jpg";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-[70vh] md:min-h-screen grid place-items-center overflow-hidden">
-      
-      <div 
+      <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url(${heroBG})`, 
+          backgroundImage: `url(${heroBG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
-        
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 

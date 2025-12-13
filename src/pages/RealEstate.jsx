@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import MapContainer from "../components/map/MapContainer";
-import { openWhatsApp } from "../utils/openWhatsapp";
+import { openWhatsApp } from "../utils/openWhatsApp";
 
 export default function RealEstate() {
   const services = [
@@ -39,7 +39,7 @@ export default function RealEstate() {
         transition={{ duration: 0.8 }}
         className="mb-16"
       >
-      <h1 className="section-title">Real Estate Services</h1>
+        <h1 className="section-title">Real Estate Services</h1>
         <p className="section-subtitle max-w-2xl">
           Explore houses for rent (furnished & unfurnished), apartments, plots
           for sale, and commercial & residential properties.
@@ -92,7 +92,7 @@ export default function RealEstate() {
                     className="btn-accent"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={()=>openWhatsApp("know-more", "real-estate")}
+                    onClick={() => openWhatsApp("know-more", "real-estate")}
                   >
                     Know More
                   </motion.button>
