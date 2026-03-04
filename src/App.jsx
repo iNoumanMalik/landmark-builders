@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import FloatingActionButton from "./components/FloatingActionButton";
+import NotFound from "./pages/NotFound.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
@@ -31,10 +32,12 @@ function App() {
             <Route path="/construction" element={<Construction />} />
             <Route path="/realestate" element={<RealEstate />} />
             <Route path="/contact" element={<Contact />} />
+            {/* 404 page */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>
-      <FloatingActionButton/>
+      <FloatingActionButton />
       <Footer />
     </div>
   );
