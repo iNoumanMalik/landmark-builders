@@ -5,12 +5,14 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import FloatingActionButton from "./components/FloatingActionButton";
+import NotFound from "./pages/NotFound.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
 const Construction = lazy(() => import("./pages/Construction.jsx"));
 const RealEstate = lazy(() => import("./pages/RealEstate.jsx"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
+const Projects = lazy(() => import("./pages/Projects.jsx"));
 
 function App() {
   return (
@@ -30,11 +32,14 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/construction" element={<Construction />} />
             <Route path="/realestate" element={<RealEstate />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            {/* 404 page */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>
-      <FloatingActionButton/>
+      <FloatingActionButton />
       <Footer />
     </div>
   );
