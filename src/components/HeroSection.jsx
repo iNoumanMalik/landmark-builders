@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { openWhatsApp } from "../utils/openWhatsApp";
-import heroBG from "../assets/hero-4.jpg";
+import heroBG from "../assets/hero-bg.jpeg";
 
 export default function HeroSection() {
   return (

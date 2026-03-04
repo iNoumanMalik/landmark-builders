@@ -5,25 +5,25 @@ import { openWhatsApp } from "../utils/openWhatsApp";
 export default function RealEstate() {
   const services = [
     {
-      title: "Property Sale, Purchase & Rent",
+      title: "Buy & Sell Properties",
       description:
         "Smooth, transparent property deals with expert guidance and verified listings for homes, plots, and commercial spaces.",
       image: "../assets/realstate.jpg",
     },
     {
-      title: "Furnished & Unfurnished Homes",
+      title: "Rent Homes",
       description:
         "Find your perfect living space — from fully furnished luxury homes to design-ready residences tailored to your needs.",
       image: "/assets/realestate/furnished.jpg",
     },
     {
-      title: "Apartments & Luxury Apartments",
+      title: "Apartments",
       description:
         "Experience high-end living in premium apartments like Centaurus and Silver Oaks with top-tier amenities.",
       image: "/assets/realestate/apartments.jpg",
     },
     {
-      title: "Commercial, Residential & Plots",
+      title: "Plots & Commercial Properties",
       description:
         "Explore verified commercial and residential plots for investment and development opportunities.",
       image: "/assets/realestate/plots.jpg",
