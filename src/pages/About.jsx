@@ -1,9 +1,9 @@
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
-import panoAbout from "../assets/pano-about.png";
+import panoAbout from "../assets/about-section.png";
 
 export default function About() {
   return (
-    <section className="container-padded py-32 ">
+    <section className="container-padded pt-32 ">
       <h1 className="section-title">About Us</h1>
       <p className="section-subtitle max-w-2xl">
         We are a team of CDA-authorized architects and engineers serving
@@ -38,8 +38,26 @@ export default function About() {
         </div>
       </div>
       <div className="mt-8">
-        <div className="w-full h-32 mb-28 bg-gray-200 rounded-lg grid place-items-center text-gray-500">
+        <div className="w-full h-full bg-gray-200 rounded-lg grid place-items-center text-gray-500">
           <img src={panoAbout} className="w-full h-full rounded-2xl" />
+        </div>
+      </div>
+      <div className="max-w-4xl mx-auto px-6 pt-16">
+        <div className="relative bg-white shadow-lg rounded-xl px-8 py-10 text-center border border-gray-100">
+          <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full text-xl shadow-md">
+            "
+          </div>
+
+          <p className="text-lg md:text-xl italic text-gray-600 leading-relaxed font-light">
+            From foundations to futures — we build spaces where families live,
+            businesses grow, and communities thrive.
+          </p>
+
+          <div className="w-16 h-[2px] bg-primary mx-auto my-6"></div>
+
+          <p className="text-sm text-gray-500 tracking-widest uppercase">
+            Our Commitment
+          </p>
         </div>
       </div>
     </section>
