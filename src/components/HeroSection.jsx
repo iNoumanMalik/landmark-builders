@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
 import { openWhatsApp } from "../utils/openWhatsApp";
 import heroBG from "../assets/hero-bg.jpeg";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
   return (
     <section className="relative min-h-[70vh] md:min-h-screen grid place-items-center overflow-hidden">
       <div
@@ -46,10 +52,7 @@ export default function HeroSection() {
           >
             Get a Quote
           </button>
-          <button
-            onClick={() => openWhatsApp("contact", "")}
-            className="btn-primary"
-          >
+          <button onClick={handleContactClick} className="btn-primary">
             Contact Us
           </button>
         </motion.div>

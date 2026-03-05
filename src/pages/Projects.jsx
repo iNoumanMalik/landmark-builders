@@ -4,7 +4,7 @@ import projectB from "../assets/project-image.jpeg";
 
 const projectsData = [
   {
-    title: "1 kanal house in F-/2 Islamabad",
+    title: "1 kanal house in F-6/2 Islamabad",
     description:
       "Completed the project from excavation to Grey Structure completion. Structure included Isolated Footing with Ground + 1 floor.",
     image: projectA,
