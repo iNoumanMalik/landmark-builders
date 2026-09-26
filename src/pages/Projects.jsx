@@ -4,13 +4,13 @@ import projectB from "../assets/project-image.jpeg";
 
 const projectsData = [
   {
-    title: "1 kanal house in F-6/2 Islamabad",
+    title: "1 Kanal House in F-6/2 Islamabad",
     description:
       "Completed the project from excavation to Grey Structure completion. Structure included Isolated Footing with Ground + 1 floor.",
     image: projectA,
   },
   {
-    title: "1 Kanal House in BaniGala",
+    title: "1 Kanal House in Bani Gala",
     description:
       "This Project is located in Banigala Zakria Lane. It has a covered area of 5500 sq-ft. The project was completed with top notch quality",
     image: projectB,

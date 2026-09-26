@@ -242,7 +242,7 @@ export default function Navbar() {
             />
             <div>
               <div className="logo-name">ZamungClient</div>
-              <div className="logo-sub">Real Estate & Construction</div>
+              <div className="logo-sub">Real Estate & Builders</div>
             </div>
           </Link>
 

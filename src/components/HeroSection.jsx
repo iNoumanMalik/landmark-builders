@@ -30,7 +30,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="text-white text-4xl md:text-5xl font-bold"
         >
-          ZamungClient Real Estate & Construction
+          ZamungClient Real Estate & Builders
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

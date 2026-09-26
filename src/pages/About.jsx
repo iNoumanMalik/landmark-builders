@@ -10,31 +10,14 @@ export default function About() {
         Islamabad & Rawalpindi. Our mission is to deliver quality construction
         and reliable real estate solutions.
       </p>
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
+      <div className="mt-8 grid gap-6">
         <div className="card p-6">
           <h3 className="font-semibold text-primary">Company Profile</h3>
           <p className="text-sm text-warmGray mt-2">
-            ZamungClient Real Estate & Construction has successfully delivered
+            ZamungClient Real Estate & Builders has successfully delivered
             residential and commercial projects across CDA and RDA
             jurisdictions.
           </p>
-        </div>
-        <div className="card p-6">
-          <h3 className="font-semibold text-primary">Milestones</h3>
-          <div className="mt-3 grid grid-cols-2 gap-4">
-            <div className="text-center">
-              <div className="text-sm text-warmGray">Years of Experience</div>
-              <div className="text-2xl font-bold text-primary">
-                <AnimatedCounter to={5} suffix="+" />
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-sm text-warmGray">Projects Completed</div>
-              <div className="text-2xl font-bold text-primary">
-                <AnimatedCounter to={60} suffix="+" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div className="mt-8">
