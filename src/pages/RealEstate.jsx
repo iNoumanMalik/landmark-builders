@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import MapContainer from "../components/map/MapContainer";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 import { openWhatsApp } from "../utils/openWhatsApp";
+
+const MotionDiv = motion.div;
+const MotionButton = motion.button;
+const MotionAnchor = motion.a;
 
 export default function RealEstate() {
   const services = [
@@ -32,7 +37,7 @@ export default function RealEstate() {
 
   return (
     <section className="container-padded pt-36">
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -44,11 +49,11 @@ export default function RealEstate() {
           Explore houses for rent (furnished & unfurnished), apartments, plots
           for sale, and commercial & residential properties.
         </p>
-      </motion.div>
+      </MotionDiv>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {services.map((service, index) => (
-          <motion.div
+          <MotionDiv
             key={index}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +61,7 @@ export default function RealEstate() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="relative h-80 perspective-1000"
           >
-            <motion.div
+            <MotionDiv
               className="relative w-full h-full cursor-pointer"
               style={{ transformStyle: "preserve-3d" }}
               whileHover={{ rotateX: 180 }}
@@ -73,38 +78,40 @@ export default function RealEstate() {
 
               {/* Back Side */}
               <div
-                className="absolute inset-0 w-full h-full rounded-xl shadow-card backface-hidden"
-                style={{
-                  transform: "rotateX(180deg)",
-                  backgroundImage: `linear-gradient(rgba(14, 42, 79, 0.8), rgba(14, 42, 79, 0.7)), url(${service.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                className="absolute inset-0 w-full h-full overflow-hidden rounded-xl shadow-card backface-hidden"
+                style={{ transform: "rotateX(180deg)" }}
               >
-                <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
+                <ImageWithSkeleton
+                  src={service.image}
+                  alt=""
+                  containerClassName="absolute inset-0"
+                  className="h-full w-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary/70" />
+                <div className="absolute inset-0 z-10 flex flex-col justify-center items-center p-6 text-center">
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 leading-tight">
                     {service.title}
                   </h3>
                   <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <motion.button
+                  <MotionButton
                     className="btn-accent"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => openWhatsApp("know-more", "real-estate")}
                   >
                     Know More
-                  </motion.button>
+                  </MotionButton>
                 </div>
               </div>
-            </motion.div>
-          </motion.div>
+            </MotionDiv>
+          </MotionDiv>
         ))}
       </div>
 
       {/* Additional Info Section */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -198,10 +205,10 @@ export default function RealEstate() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </MotionDiv>
 
       {/* Interactive Map Section */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -209,9 +216,9 @@ export default function RealEstate() {
         className="mt-20"
       >
         <MapContainer />
-      </motion.div>
+      </MotionDiv>
 
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -227,7 +234,7 @@ export default function RealEstate() {
             From luxury apartments to profitable plots, we make property
             investment easy.
           </p>
-          <motion.a
+          <MotionAnchor
             href="/contact"
             className="btn-accent inline-flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
@@ -247,9 +254,9 @@ export default function RealEstate() {
                 d="M13 7l5 5m0 0l-5 5m5-5H6"
               />
             </svg>
-          </motion.a>
+          </MotionAnchor>
         </div>
-      </motion.div>
+      </MotionDiv>
       {/* <div className="mt-16 text-center">
         <h3 className="text-xl font-bold text-primary">
           Looking for Property?

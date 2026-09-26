@@ -1,3 +1,5 @@
+import ImageWithSkeleton from "../components/ImageWithSkeleton.jsx";
+
 import React, { useRef, useState, useEffect } from "react";
 import projectA from "../assets/hero-bg.jpeg";
 import projectB from "../assets/project-image.jpeg";
@@ -15,7 +17,7 @@ const projectsData = [
       "This Project is located in Banigala Zakria Lane. It has a covered area of 5500 sq-ft. The project was completed with top notch quality",
     image: projectB,
   },
-];  
+];
 
 export default function Projects() {
   const headerRef = useRef(null);
@@ -93,12 +95,18 @@ export default function Projects() {
             Crafting spaces that inspire — from landmark areas to vibrant
             commercial hubs.
           </p>
-              </div>
-              
+        </div>
       </div>
 
-            <div style={{ height: "1px", background: "linear-gradient(to right, #CC9552, rgba(204,149,82,0.1))", marginTop: "36px" }} />
-          
+      <div
+        style={{
+          height: "1px",
+          background:
+            "linear-gradient(to right, #CC9552, rgba(204,149,82,0.1))",
+          marginTop: "36px",
+        }}
+      />
+
       {/* Project Cards */}
       {projectsData.map((project, idx) => (
         <div
@@ -108,10 +116,11 @@ export default function Projects() {
           }`}
         >
           <div className="md:w-1/2 w-full h-64 md:h-80 overflow-hidden rounded-lg shadow-md">
-            <img
+            <ImageWithSkeleton
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover"
+              containerClassName="h-full w-full"
+              className="h-full w-full object-cover"
             />
           </div>
 

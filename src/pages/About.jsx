@@ -1,4 +1,5 @@
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
+import ImageWithSkeleton from "../components/ImageWithSkeleton.jsx";
 import panoAbout from "../assets/about-section.png";
 
 export default function About() {
@@ -21,9 +22,12 @@ export default function About() {
         </div>
       </div>
       <div className="mt-8">
-        <div className="w-full h-full bg-gray-200 rounded-lg grid place-items-center text-gray-500">
-          <img src={panoAbout} className="w-full h-full rounded-2xl" />
-        </div>
+        <ImageWithSkeleton
+          src={panoAbout}
+          alt="Panoramic view of the company’s construction work"
+          containerClassName="w-full aspect-[1365/768] rounded-2xl"
+          className="h-full w-full object-cover"
+        />
       </div>
       <div className="max-w-4xl mx-auto px-6 pt-16">
         <div className="relative bg-white shadow-lg rounded-xl px-8 py-10 text-center border border-gray-100">

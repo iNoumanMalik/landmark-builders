@@ -1,19 +1,23 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ImageWithSkeleton from "./ImageWithSkeleton";
+
+const MotionDiv = motion.div;
 
 export default function ServiceCard({ title, description, image, href }) {
   return (
-    <motion.div
+    <MotionDiv
       whileHover={{ scale: 1.02 }}
       className="card overflow-hidden hover:shadow-lg transition block"
     >
       <Link to={href}>
         <div className="h-40 bg-gray-200">
           {image ? (
-            <img
+            <ImageWithSkeleton
               src={image}
               alt={`${title} image`}
-              className="w-full h-full object-cover"
+              containerClassName="h-full"
+              className="h-full w-full object-cover"
             />
           ) : (
             <div className="w-full h-full grid place-items-center text-gray-500">
@@ -29,6 +33,6 @@ export default function ServiceCard({ title, description, image, href }) {
           </div>
         </div>
       </Link>
-    </motion.div>
+    </MotionDiv>
   );
 }
