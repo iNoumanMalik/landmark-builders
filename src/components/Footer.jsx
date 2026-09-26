@@ -35,7 +35,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="www.tiktok.com/@zamungclient"
+              href="https://www.tiktok.com/@zamungclient"
               className="hover:text-accent"
             >
               TikTok

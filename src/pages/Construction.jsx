@@ -116,7 +116,7 @@ export default function Construction() {
           />
         </div>
         <p className="section-subtitle max-w-2xl">
-          Landmark provides end-to-end complete construction services including
+          ZamungClient provides end-to-end complete construction services including
           Grey Structure and Finishing stages, guided by CDA-authorized
           engineers and architects.
         </p>
