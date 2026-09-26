@@ -1,8 +1,12 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
   return (
-    <form action="https://formspree.io/f/your-form-id" method="POST" className="grid gap-4 card p-6">
+    <form
+      action={`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_FORM_ID}`}
+      method="POST"
+      className="grid gap-4 card p-6"
+    >
       <motion.input
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -39,7 +43,9 @@ export default function ContactForm() {
         rows={5}
         className="border border-gray-200 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
       />
-      <button type="submit" className="btn-accent">Send Message</button>
+      <button type="submit" className="btn-accent">
+        Send Message
+      </button>
     </form>
-  )
+  );
 }

@@ -9,7 +9,7 @@ export default function Footer() {
               ZC
             </div> */}
             <img src={logo} className="w-10" />
-            <h3 className="text-lg font-bold">Real Estate & Construction</h3>
+            <h3 className="text-lg font-bold">Real Estate & Builders</h3>
           </div>
 
           <p className="text-sm text-white/80 mt-2">

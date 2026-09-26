@@ -14,7 +14,7 @@ export default function About() {
         <div className="card p-6">
           <h3 className="font-semibold text-primary">Company Profile</h3>
           <p className="text-sm text-warmGray mt-2">
-            ZamungClient Real Estate & Construction has successfully delivered
+            ZamungClient Real Estate & Builders has successfully delivered
             residential and commercial projects across CDA and RDA
             jurisdictions.
           </p>
