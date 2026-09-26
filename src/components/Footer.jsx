@@ -8,7 +8,7 @@ export default function Footer() {
             {/* <div className="h-9 w-9 rounded-lg bg-warmGray text-white grid place-items-center font-bold">
               ZC
             </div> */}
-            <img src={logo} className="w-10"/>
+            <img src={logo} className="w-10" />
             <h3 className="text-lg font-bold">Real Estate & Construction</h3>
           </div>
 
@@ -25,14 +25,20 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold">Follow</h4>
           <div className="flex gap-3 mt-2">
-            <a href="#" className="hover:text-accent">
+            <a
+              href="https://www.facebook.com/zc.realestate/"
+              className="hover:text-accent"
+            >
               Facebook
             </a>
-            <a href="#" className="hover:text-accent">
+            <a href="https://www.instagram.com/" className="hover:text-accent">
               Instagram
             </a>
-            <a href="#" className="hover:text-accent">
-              LinkedIn
+            <a
+              href="www.tiktok.com/@zamungclient"
+              className="hover:text-accent"
+            >
+              TikTok
             </a>
           </div>
         </div>

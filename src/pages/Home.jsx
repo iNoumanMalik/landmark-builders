@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          {/* <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="card p-6">
               <div className="text-sm text-warmGray">Years of Experience</div>
               <div className="text-2xl font-bold text-primary">
@@ -150,7 +150,7 @@ export default function Home() {
                 <AnimatedCounter to={150} suffix="+" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
